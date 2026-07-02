@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Look Away</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #050505;
+            color: #ff3333;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 24px;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
+        }
+        canvas {
+            border: 2px solid #222;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            background-color: #0a0a0a;
+            cursor: none; /* Hides mouse so we can track flashlight direction */
+        }
+        #ui-overlay {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>DON'T LOOK AWAY</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="ui-overlay">Use WASD to move. Aim your flashlight with the MOUSE. Escape to the green hatch.</div>
+
+    <script>
+        // Game code will go here
+    </script>
+</body>
+</html>
